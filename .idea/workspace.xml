@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="97241a86-722a-496f-8d7a-28dd90f6742d" name="Changes" comment="demo init" />
+    <list default="true" id="97241a86-722a-496f-8d7a-28dd90f6742d" name="Changes" comment="git rebase test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -144,7 +144,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="origin/main" />
+                        <option value="release/20221206" />
                       </list>
                     </value>
                   </entry>
