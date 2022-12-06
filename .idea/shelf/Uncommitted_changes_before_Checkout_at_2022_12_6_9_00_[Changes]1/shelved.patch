@@ -1,0 +1,66 @@
+Index: demo/src/main/resources/templates/index.html
+===================================================================
+diff --git a/demo/src/main/resources/templates/index.html b/demo/src/main/resources/templates/index.html
+new file mode 100644
+--- /dev/null	
++++ b/demo/src/main/resources/templates/index.html	
+@@ -0,0 +1,10 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>Title</title>
++</head>
++<body>
++
++</body>
++</html>
+\ No newline at end of file
+Index: demo/src/main/resources/static/index.html
+===================================================================
+diff --git a/demo/src/main/resources/static/index.html b/demo/src/main/resources/static/index.html
+new file mode 100644
+--- /dev/null	
++++ b/demo/src/main/resources/static/index.html	
+@@ -0,0 +1,10 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>Title</title>
++</head>
++<body>
++
++</body>
++</html>
+\ No newline at end of file
+Index: demo/src/main/java/com/example/demo/controller/HomeController.java
+===================================================================
+diff --git a/demo/src/main/java/com/example/demo/controller/HomeController.java b/demo/src/main/java/com/example/demo/controller/HomeController.java
+new file mode 100644
+--- /dev/null	
++++ b/demo/src/main/java/com/example/demo/controller/HomeController.java	
+@@ -0,0 +1,22 @@
++package com.example.demo.controller;
++
++
++import org.springframework.web.bind.annotation.GetMapping;
++import org.springframework.web.bind.annotation.PostMapping;
++import org.springframework.web.bind.annotation.RequestMapping;
++
++/**
++ * @author yq
++ */
++@RequestMapping("/users")
++public class HomeController {
++    @GetMapping
++    public String home() {
++        return "home";
++    }
++
++    @PostMapping
++    public String save() {
++        return "save success";
++    }
++}
+\ No newline at end of file

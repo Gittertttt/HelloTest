@@ -1,0 +1,57 @@
+Index: demo/src/main/java/com/example/demo/DemoApplication.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.demo;\r\n\r\nimport org.springframework.boot.SpringApplication;\r\nimport org.springframework.boot.autoconfigure.SpringBootApplication;\r\n\r\n@SpringBootApplication\r\npublic class DemoApplication {\r\n\r\n    public static void main(String[] args) {\r\n        SpringApplication.run(DemoApplication.class, args);\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/demo/src/main/java/com/example/demo/DemoApplication.java b/demo/src/main/java/com/example/demo/DemoApplication.java
+--- a/demo/src/main/java/com/example/demo/DemoApplication.java	
++++ b/demo/src/main/java/com/example/demo/DemoApplication.java	
+@@ -3,9 +3,16 @@
+ import org.springframework.boot.SpringApplication;
+ import org.springframework.boot.autoconfigure.SpringBootApplication;
+ 
++/**
++ * @author yq
++ * @date 2022/11/22
++ */
+ @SpringBootApplication
+ public class DemoApplication {
+ 
++    /**
++     * @param args arg
++     */
+     public static void main(String[] args) {
+         SpringApplication.run(DemoApplication.class, args);
+     }
+Index: demo/src/test/java/com/example/demo/DemoApplicationTests.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.demo;\r\n\r\nimport org.junit.jupiter.api.Test;\r\nimport org.springframework.boot.test.context.SpringBootTest;\r\n\r\n@SpringBootTest\r\nclass DemoApplicationTests {\r\n\r\n    @Test\r\n    void contextLoads() {\r\n    }\r\n\r\n}\r\n
+===================================================================
+diff --git a/demo/src/test/java/com/example/demo/DemoApplicationTests.java b/demo/src/test/java/com/example/demo/DemoApplicationTests.java
+--- a/demo/src/test/java/com/example/demo/DemoApplicationTests.java	
++++ b/demo/src/test/java/com/example/demo/DemoApplicationTests.java	
+@@ -10,4 +10,12 @@
+     void contextLoads() {
+     }
+ 
++    @Test
++    void saveActionPlugin() {
++        for (int i = 1; i < 2; i++) {
++            System.out.println("hello");
++            System.out.println("world");
++        }
++    }
++
+ }
+Index: demo/src/main/resources/application.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\n
+===================================================================
+diff --git a/demo/src/main/resources/application.properties b/demo/src/main/resources/application.properties
+--- a/demo/src/main/resources/application.properties	
++++ b/demo/src/main/resources/application.properties	
+@@ -1,1 +1,2 @@
+ 
++spring.web.resources.static-locations=classpath:/templates
